@@ -1,7 +1,10 @@
+local ret_status="%(?:%{$fg_bold[green]%} ➜  :%{$fg_bold[red]%} ➜  )"
+
 #PROMPT='%{$fg_no_bold[cyan]%}%n%{$fg_no_bold[magenta]%} ➜ %{$fg_no_bold[green]%}%3~$(git_prompt_info)%{$reset_color%}» '
 #PROMPT='%{$fg_no_bold[cyan]%}%n%{$fg_no_bold[red]%} ➜  %{$fg_no_bold[green]%}%3~$(git_prompt_info)%{$reset_color%}» '
-PROMPT='%{$fg_no_bold[yellow]%}[%*] %{$fg_no_bold[cyan]%}%n%{$fg_no_bold[red]%} ➜  %{$fg_no_bold[green]%}%3~$(git_prompt_info)%{$reset_color%}» '
-#PROMPT='%{$fg_no_bold[yellow]%}[%*] %{$fg_no_bold[cyan]%}%n%{$fg_no_bold[red]%} ➜ %{$fg_no_bold[green]%}%3~$(git_prompt_info)%{$reset_color%}» '
+#PROMPT='%{$fg_no_bold[yellow]%}[%*] %{$fg_no_bold[cyan]%}%n%{$fg_no_bold[red]%} ➜  %{$fg_no_bold[green]%}%3~$(git_prompt_info)%{$reset_color%}» '
+
+PROMPT='%{$fg_no_bold[yellow]%}[%*] %{$fg_no_bold[cyan]%}%n${ret_status} %{$fg_no_bold[green]%}%3~$(git_prompt_info)%{$reset_color%}» '
 
 #RPROMPT='[%*]'
 
